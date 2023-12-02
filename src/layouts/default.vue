@@ -97,7 +97,7 @@ export default {
       if (this.getCart.length == 0) {
         return 0;
       } else {
-        this.getCart.forEach((item) => {
+        this.getCart?.forEach((item) => {
           total = total + parseInt(item.jumlah_pemesanan);
         });
         return total;
